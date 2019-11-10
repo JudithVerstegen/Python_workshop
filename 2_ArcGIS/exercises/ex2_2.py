@@ -6,7 +6,7 @@ import os
 # Set workspace
 wd = os.path.join('C:\\', 'Users', 'verstege', 'Documents', \
                   'workshops_conferences', '2019_2020', 'ILS_Python', \
-                  'materials', '2_ArcGIS')
+                  'materials')
 arcpy.env.workspace = os.path.join(wd, 'data')
 
 # FeatureClassToNumPyArray
