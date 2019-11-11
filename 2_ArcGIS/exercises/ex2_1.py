@@ -28,7 +28,7 @@ out = arcpy.sa.Sample(in_raster, in_shape, \
 print(out) # Note that this is the file name
 # Run Join Field to join the output to the shapefile
 # Looking at the table, you find that the shape id is track_repr
-arcpy.management.JoinField(in_shape, 'FID', out, 'track_repr')
+arcpy.management.JoinField(in_shape, 'FID', out, 'gps_track_')
 
 # check in extension (give it back)
 arcpy.CheckInExtension('Spatial')

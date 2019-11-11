@@ -56,7 +56,7 @@ if new_field_name in field_names:
 # Add the speed field to the vector file
 # Precision and scale: max 6 digits of wich two decimals
 arcpy.AddField_management(vector_input, new_field_name, 'FLOAT', \
-                          field_scale=2)
+                          field_scale=2, field_precision=6)
 
 # Create an update cursor
 upd_cursor = arcpy.da.UpdateCursor(vector_input,[new_field_name])
