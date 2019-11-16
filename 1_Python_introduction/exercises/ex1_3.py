@@ -9,7 +9,7 @@ file_name = 'radius.txt'
 
 # function
 def area_circle(radius):
-  area = math.pi * r ** 2
+  area = math.pi * radius ** 2
   return area
 
 # MAIN
