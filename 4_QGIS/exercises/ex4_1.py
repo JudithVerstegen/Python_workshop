@@ -13,10 +13,10 @@ if not layer:
     print("Shapefile failed to load!")
 
 # Feature selection with expression
-exp = QgsExpression('$id < 11')
+exp = QgsExpression('$id < 10')
 # Note that the field track_se_1 contains the id too
 # So, another solution would be:
-#exp = QgsExpression('track_se_1 < 11')
+#exp = QgsExpression('track_se_1 < 10')
 request = QgsFeatureRequest(exp)
 selection = layer.getFeatures(request)
 
